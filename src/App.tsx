@@ -63,7 +63,7 @@ const App: React.FC = () => {
           setOutput(outstr);
           axios
             .get<ApiResponse>(
-              `https://503f-158-51-123-17.ngrok-free.app/read?UNICODE=${qrCode.data}`
+              `https://qr-backend-sage.vercel.app/read?UNICODE=${qrCode.data}`
             )
             .then((response) => {
               console.log("asdasdasd");
