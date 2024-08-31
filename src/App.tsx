@@ -97,9 +97,9 @@ const App: React.FC = () => {
               }
 
               // Do something with outstr, like logging or displaying it
+              setOutput(outstr);
             })
             .catch((err) => console.log(err));
-          setOutput(outstr);
         } else {
           setOutput("Scanning...");
           requestAnimationFrame(scanQRCode); // Continue scanning
