@@ -60,6 +60,7 @@ const App: React.FC = () => {
 
         if (qrCode) {
           let outstr = `QR Code detected: ${qrCode.data}`;
+          setOutput(outstr);
           axios
             .get<ApiResponse>(
               `https://503f-158-51-123-17.ngrok-free.app/read?UNICODE=${qrCode.data}`
