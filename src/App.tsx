@@ -66,6 +66,7 @@ const App: React.FC = () => {
               `https://503f-158-51-123-17.ngrok-free.app/read?UNICODE=${qrCode.data}`
             )
             .then((response) => {
+              console.log("asdasdasd");
               const data = response.data;
               if (data.ok === "false") {
                 outstr += `\n${data.message}`;
